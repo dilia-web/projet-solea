@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLÉA – Crèmes solaires & soins après-soleil</title>
+    <meta name="description" content="SOLÉA, boutique e-commerce premium dédiée aux crèmes solaires visage et corps, SPF 30, SPF 50 et soins après-soleil.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-top">
+            <a href="#" class="brand-logo">
+                <span class="brand-logo-text">SOLÉA</span>
+            </a>
+
+            <nav class="main-nav">
+                <button class="nav-toggle" aria-expanded="false" data-js="nav-toggle">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Accueil</a></li>
+                    <li><a href="#nos-solaires" class="nav-link">Nos solaires</a></li>
+                    <li><a href="#categorie-visage" class="nav-link">Visage</a></li>
+                    <li><a href="#categorie-corps" class="nav-link">Corps</a></li>
+                    <li><a href="#categorie-apres-soleil" class="nav-link">Après-soleil</a></li>
+                    <li><a href="#a-propos" class="nav-link">À propos</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-button" data-js="search-toggle">
+                    <span class="icon-search"></span>
+                </button>
+                <button class="icon-button">
+                    <span class="icon-user"></span>
+                </button>
+                <button class="icon-button cart-button" data-js="cart-toggle">
+                    <span class="icon-cart"></span>
+                    <span class="cart-count" data-js="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="header-search" data-js="search-bar" hidden>
+            <form class="search-form">
+                <input id="search-input" type="search" placeholder="Rechercher un produit...">
+                <button class="btn btn-primary">Rechercher</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Votre peau, protégée avec élégance tout l’été.</h1>
+                <p class="hero-subtitle">
+                    SOLÉA est la maison de la protection solaire premium, pensée pour une peau saine, lumineuse et parfaitement protégée.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#nos-solaires" class="btn btn-primary">Découvrir nos solaires</a>
+                    <a href="#section-conseils" class="btn btn-secondary">Trouver ma protection</a>
+                </div>
+
+                <ul class="hero-highlights">
+                    <li>SPF haute protection</li>
+                    <li>Formules testées dermatologiquement</li>
+                    <li>Textures légères et invisibles</li>
+                </ul>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <figure class="hero-figure">
+                    <img src="img1.jpg" alt="Application de crème solaire" class="hero-image">
+                    <figcaption>Protection solaire inspirée par le soleil.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- AVANTAGES -->
+        <section class="section-advantages">
+            <div class="section-header">
+                <h2>Pourquoi choisir SOLÉA ?</h2>
+                <p>Des protections solaires conçues pour allier efficacité, confort et beauté.</p>
+            </div>
+
+            <div class="advantages-grid">
+                <article class="advantage-card">
+                    <div class="advantage-icon"></div>
+                    <h3>SPF haute protection</h3>
+                    <p>SPF 30 à 50+ pour une protection optimale.</p>
+                </article>
+
+                <article class="advantage-card">
+                    <div class="advantage-icon"></div>
+                    <h3>Testé dermatologiquement</h3>
+                    <p>Respecte les peaux sensibles.</p>
+                </article>
+
+                <article class="advantage-card">
+                    <div class="advantage-icon"></div>
+                    <h3>Texture légère</h3>
+                    <p>Fluide, invisible, non collante.</p>
+                </article>
+
+                <article class="advantage-card">
+                    <div class="advantage-icon"></div>
+                    <h3>Livraison rapide</h3>
+                    <p>Expédition soignée et rapide.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- PRODUITS -->
+        <section id="nos-solaires" class="section-products">
+            <div class="section-header">
+                <h2>Nos best-sellers</h2>
+                <p>Les protections solaires préférées de nos clients.</p>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- Produit 1 -->
+                <article class="product-card" data-product-id="1">
+                    <div class="product-badge">Best-seller</div>
+                    <figure class="product-image-wrapper">
+                        <img src="IMG2.jpg" class="product-image">
+                    </figure>
+                    <div class="product-info">
+                        <h3 class="product-name">Crème Solaire Visage SPF 50+</h3>
+                        <p class="product-description">Protection haute performance.</p>
+                        <p class="product-spf">SPF 50+ • UVA/UVB</p>
+                        <div class="product-pricing">
+                            <span class="product-price">24,90 €</span>
+                            <span class="product-old-price">29,90 €</span>
+                        </div>
+                        <div class="product-rating">★★★★★ (128 avis)</div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary" data-js="add-to-cart">Ajouter au panier</button>
+                        <button class="icon-button favorite-button" data-js="toggle-favorite">
+                            <span class="icon-heart"></span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Produit 2 -->
+                <article class="product-card" data-product-id="2">
+                    <div class="product-badge">Invisible</div>
+                    <figure class="product-image-wrapper">
+                        <img src="IMG3.jpg" class="product-image">
+                    </figure>
+                    <div class="product-info">
+                        <h3 class="product-name">Fluide Solaire Invisible SPF 50+</h3>
+                        <p class="product-description">Ultra-léger, fini imperceptible.</p>
+                        <p class="product-spf">SPF 50+ • Haute protection</p>
+                        <div class="product-pricing">
+                            <span class="product-price">26,90 €</span>
+                        </div>
+                        <div class="product-rating">★★★★★ (94 avis)</div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary" data-js="add-to-cart">Ajouter au panier</button>
+                        <button class="icon-button favorite-button" data-js="toggle-favorite">
+                            <span class="icon-heart"></span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Produit 3 -->
+                <article class="product-card" data-product-id="3">
+                    <div class="product-badge">Nouveau</div>
+                    <figure class="product-image-wrapper">
+                        <img src="IMG4.jpg" class="product-image">
+                    </figure>
+                    <div class="product-info">
+                        <h3 class="product-name">Lait Solaire Corps SPF 50+</h3>
+                        <p class="product-description">Hydratant et protecteur.</p>
+                        <p class="product-spf">SPF 50+ • Corps</p>
+                        <div class="product-pricing">
+                            <span class="product-price">22,90 €</span>
+                        </div>
+                        <div class="product-rating">★★★★☆ (67 avis)</div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary" data-js="add-to-cart">Ajouter au panier</button>
+                        <button class="icon-button favorite-button" data-js="toggle-favorite">
+                            <span class="icon-heart"></span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Produit 4 -->
+                <article class="product-card" data-product-id="4">
+                    <div class="product-badge">Teintée</div>
+                    <figure class="product-image-wrapper">
+                        <img src="IMG5.jpg" class="product-image">
+                    </figure>
+                    <div class="product-info">
+                        <h3 class="product-name">Crème Solaire Teintée SPF 50+</h3>
+                        <p class="product-description">Unifie le teint.</p>
+                        <p class="product-spf">SPF 50+ • Visage</p>
+                        <div class="product-pricing">
+                            <span class="product-price">27,90 €</span>
+                        </div>
+                        <div class="product-rating">★★★★☆ (53 avis)</div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary" data-js="add-to-cart">Ajouter au panier</button>
+                        <button class="icon-button favorite-button" data-js="toggle-favorite">
+                            <span class="icon-heart"></span>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONSEILS -->
+        <section id="section-conseils" class="section-tips">
+            <div class="section-header">
+                <h2>Nos conseils</h2>
+                <p>Adoptez les bons gestes pour protéger votre peau.</p>
+            </div>
+
+            <div class="tips-grid">
+
+                <article class="tip-card">
+                    <figure class="tip-image-wrapper">
+                        <img src="IMG2.jpg" class="tip-image">
+                    </figure>
+                    <div class="tip-content">
+                        <h3>Comment choisir son SPF ?</h3>
+                        <p>Comprendre les niveaux de protection.</p>
+                        <button class="btn btn-secondary">Lire l'article</button>
+                    </div>
+                </article>
+
+                <article class="tip-card">
+                    <figure class="tip-image-wrapper">
+                        <img src="img1.jpg" class="tip-image">
+                    </figure>
+                    <div class="tip-content">
+                        <h3>Quand appliquer sa crème solaire ?</h3>
+                        <p>Le bon timing pour une protection optimale.</p>
+                        <button class="btn btn-secondary">Lire l'article</button>
+                    </div>
+                </article>
+
+                <article class="tip-card">
+                    <figure class="tip-image-wrapper">
+                        <img src="IMG5.jpg" class="tip-image">
+                    </figure>
+                    <div class="tip-content">
+                        <h3>Renouveler sa protection</h3>
+                        <p>À quel rythme réappliquer sa crème ?</p>
+                        <button class="btn btn-secondary">Lire l'article</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="section-newsletter">
+            <div class="newsletter-inner">
+                <h2>Restez inspiré(e) par le soleil.</h2>
+                <p>Recevez nos conseils et nouveautés.</p>
+
+                <form class="newsletter-form" data-js="newsletter-form">
+                    <div class="newsletter-fields">
+                        <input id="newsletter-email" type="email" placeholder="Votre e-mail">
+                        <button class="btn btn-primary">Je m'inscris</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- À PROPOS -->
+        <section id="a-propos" class="section-about">
+            <div class="section-header">
+                <h2>À propos de SOLÉA</h2>
+                <p>Une marque inspirée par la lumière du sud.</p>
+            </div>
+
+            <div class="about-content">
+                <p>
+                    SOLÉA propose des protections solaires efficaces, sensorielles et esthétiques.
+                </p>
+                <p>
+                    Nos textures légères et nos packagings épurés s’inspirent de l’univers skincare moderne.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <span class="brand-logo-text">SOLÉA</span>
+                <p>Maison de protection solaire premium.</p>
+            </div>
+
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Boutique</h3>
+                    <ul>
+                        <li><a href="#nos-solaires">Nos solaires</a></li>
+                        <li><a href="#categorie-visage">Visage</a></li>
+                        <li><a href="#categorie-corps">Corps</a></li>
+                        <li><a href="#categorie-apres-soleil">Après-soleil</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Informations</h3>
+                    <ul>
+                        <li><a href="#a-propos">À propos</a></li>
+                        <li><a href="#section-conseils">Conseils</a></li>
+                        <li><a href="#">Engagements</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Aide</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Suivi de commande</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Réseaux</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span data-js="current-year"></span> SOLÉA. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
